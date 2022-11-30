@@ -66,8 +66,10 @@ nav{
     align-items: center;
     width: 100%;
     min-width: 100vw;
-    padding: 2rem 10rem 0rem;
+    padding: 2rem 10rem 2rem;
     background-color: #37517e;
+    position: fixed;
+    z-index: 1000;
 }
 
 .navlogo{
@@ -82,14 +84,19 @@ nav{
 }
 
 .navlinks{
-    width: 50%;
+    width: 70%;
     height: auto;
-}
-
-.navlinks ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.navlinks ul{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: .7rem;
 }
 
 .navlinks ul li{
@@ -104,7 +111,7 @@ nav{
 }
 
 .navbtn{
-    /* width: 20%; */
+    width: 28%;
     height: auto;
     display: flex;
     justify-content: start;
@@ -113,7 +120,7 @@ nav{
 }
 
 .navbtn button{
-    padding: .5rem 2rem;
+    padding: .3rem 1.5rem;
     background-color: #37517e;
     font-size: 1.6rem;
     text-align: center;
@@ -131,8 +138,9 @@ nav{
     color: blue;
 }
 
-
-
+.navmenu{
+    display: none;
+}
 /*Nav End*/
 
 /*Banner Start*/
@@ -141,7 +149,7 @@ nav{
     height: auto;
     background-color: #37517e;
     margin-bottom: 0rem;
-    margin-top: 0rem;
+    margin-top: 5rem;
 }
 
 .banner-cont{
@@ -636,8 +644,7 @@ progress::-webkit-progress-value{
     background-position: center;
     background-size: cover;
     position: relative;
-    z-index: 1;
-  
+    z-index: 1; 
 }
 
 .cta::after{
@@ -650,7 +657,6 @@ progress::-webkit-progress-value{
     background-color: rgb(40, 58, 90);
     z-index: -1;
     opacity: 0.9;
-
 }
 
 .ctaflexcont{
@@ -1564,6 +1570,7 @@ footer{
         width: 48%;
         margin-top: 4rem;
     }
+
 }
 
 @media (max-width: 991px){
@@ -1612,6 +1619,40 @@ footer{
 
     .team-box1{
         width: 100%;
+    }
+
+    .navlinks{
+        display: none;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 2rem 5rem;
+    }
+    .navmenu{
+        display: contents;
+        width: 50%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    .navmenu i{
+        font-size: 3rem;
+        color: white;
+    }
+
+    .navlogo{
+        width: 30%;
+    }
+
+    .navlogo h1{
+        font-size: 2.5rem;
+    }
+
+    .contact-location{
+        margin-top: .6rem;
     }
 }
 
@@ -1748,7 +1789,68 @@ footer{
         width: 100%;
         margin-top: 2rem;
     }
+    
+    .navlinks{
+        display: none;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 2rem 5rem;
+    }
+    .navmenu{
+        display: contents;
+        width: 50%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    .navmenu i{
+        font-size: 2rem;
+        color: white;
+    }
+
+    .navlogo{
+        width: 30%;
+    }
+
+    .navlogo h1{
+        font-size: 2rem;
+    }
+
+    .contact-boxs{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-box1{
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .contact-box2{
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .contact-inputs{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input1{
+        width: 100%;
+    }
+
+    .input2{
+        width: 100%;
+        margin-top: 1rem;
+    }
+
 }
+
 
 @media (max-width: 360px){
     .footer-flex p{
@@ -1884,6 +1986,69 @@ footer{
         width: 100%;
         margin-top: 2rem;
     }
+
+    .navlinks{
+        display: none;
+    }
+
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 2rem 2rem;
+    }
+    .navmenu{
+        display: contents;
+        width: 50%;
+        height: auto;
+    }
+
+    .navmenu i{
+        font-size: 1.6rem;
+        color: white;
+
+    }
+
+    .navlogo{
+        width: 30%;
+    }
+
+    .navlogo h1{
+        font-size: 1.6rem;
+    }
+    
+    .contact-boxs{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-box1{
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .contact-box2{
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .contact-inputs{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input1{
+        width: 100%;
+    }
+
+    .input2{
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+
+
 }
 
 
